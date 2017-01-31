@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.ucam_campos.controller.MainActivity">
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button"
+        android:drawableLeft="@drawable/mais"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button2"
+        android:drawableLeft="@drawable/menos"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginLeft="180dp"
+        android:layout_marginStart="120dp" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button3"
+        android:drawableLeft="@drawable/mute"
+        android:layout_alignTop="@+id/button2"
+        android:layout_marginLeft="200dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/clients_panel"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Volume:"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/clients_panel"
+        android:layout_below="@+id/imageView" />
+
+    <Button
+        android:layout_width="57dp"
+        android:layout_height="60dp"
+        android:id="@+id/button4"
+        android:drawableLeft="@drawable/bell_nor"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="69dp" />
+
+    <Button
+        android:layout_width="57dp"
+        android:layout_height="60dp"
+        android:id="@+id/button5"
+        android:drawableLeft="@drawable/bell_vib"
+
+        android:layout_alignTop="@+id/button4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="57dp"
+        android:layout_height="60dp"
+        android:id="@+id/button6"
+        android:drawableLeft="@drawable/bell_sile"
+        android:layout_alignTop="@+id/button5"
+        android:layout_toRightOf="@+id/button3"
+        android:layout_toEndOf="@+id/button3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Perfis:"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/imageView2"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="35dp" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button7"
+        android:drawableLeft="@drawable/normal"
+        android:layout_alignTop="@+id/button3"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_marginRight="30dp" />
+
+</RelativeLayout>
